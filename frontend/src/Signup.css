@@ -1,0 +1,16 @@
+.signup{
+    background-image: url("https://th.bing.com/th/id/R.512cf98c4dfe5fbdc1759fe7463f25c4?rik=CI4iveHUn75qjw&riu=http%3a%2f%2fgetwallpapers.com%2fwallpaper%2ffull%2ff%2f0%2fb%2f833860-download-simple-desktop-wallpaper-1920x1080-for-mac.jpg&ehk=lQmjtSpBs0ZAFSWtJujYqxhgjmXAOnRJNkYx0WXAg9g%3d&risl=&pid=ImgRaw&r=0");
+    width: 30%;
+    height: 50vh;
+    position: absolute;
+    left: 25%;
+    top: 15vh;
+}
+.form{
+    position: absolute;
+    left: 20%;
+}
+h2{
+    position: relative;
+    left: 20%;
+}
