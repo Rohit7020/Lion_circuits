@@ -1,4 +1,4 @@
-install npm i
+Install npm i,
 After installation packages 
 Create login component and create account component
 Refer backend folder for parameters
