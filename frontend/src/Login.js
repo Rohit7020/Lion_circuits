@@ -20,11 +20,7 @@ let Login=({setToken,setlogin})=>{
   }
 
 let fun =async(e)=>{
-
-  //const data = new FormData();
-
   let obj=JSON.stringify({"email":email,"password":password})
-  //data.append(obj)
   console.log(obj)
 
  let res=await  fetch("http://localhost:5000/user/login", {method: "POST", mode: "cors",
@@ -32,14 +28,10 @@ let fun =async(e)=>{
       .then((response)=>response.text())
       .then(data =>{
         let a=JSON.parse(data)
-      //  console.log(a.token)
        setToken(a.token)
        setlogin(true)
        
-      })
-    
-    //console.log(res)
-   
+      })  
 }
   return (
     <div className='login'>
