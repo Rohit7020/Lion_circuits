@@ -20,15 +20,9 @@ let Signup=({setToken,setSignup})=>{
 
   let Submit=(event)=>{
     event.preventDefault();
-    // Add your signup logic here
-    
   }
   let fun =async(e)=>{
-
-    //const data = new FormData();
-  
     let obj=JSON.stringify({"email":email,"password":password})
-    //data.append(obj)
     console.log(obj)
   
    let res=await  fetch("http://localhost:5000/user/signup", {method: "POST", mode: "cors",
@@ -40,9 +34,6 @@ let Signup=({setToken,setSignup})=>{
          setSignup(true)
          
         })
-      
-      //console.log(res)
-     
   }
 
   return (
