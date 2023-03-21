@@ -3,13 +3,7 @@ const userModel = require("../Model/user.model")
 var bcrypt = require('bcryptjs');
 var jwt = require('jsonwebtoken');
 
-
-
-
-
-//Router
 const userRouter=Router();
-//create account
 userRouter.post("/createAccount",async(req,res)=>{
 
   console.log(req.body)
@@ -38,7 +32,6 @@ try {
             });} catch (error) {return res.send(error)}
 });
 
-//login
 userRouter.post("/login",async(req,res)=>{
     const {email,password}=req.body
     console.log(req.body)
